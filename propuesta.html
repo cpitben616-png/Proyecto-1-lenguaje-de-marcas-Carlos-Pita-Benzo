@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Propuesta de personaje - Dragon Ball Secrets</title>
+<meta name="description" content="Formulario para proponer nuevos personajes al catálogo de Dragon Ball Secrets">
+</head>
+<body>
+<a href="#contenido">Saltar al contenido</a>
+<header>
+<h1>Dragon Ball Secrets</h1>
+<nav>
+<ul>
+<li><a href="index.html">Inicio</a></li>
+<li><a href="catalogo.html">Catálogo</a></li>
+<li><a href="comparativa.html">Comparativa</a></li>
+<li><a href="sobre-los-datos.html">Sobre los datos</a></li>
+<li><a href="propuesta.html" aria-current="page">Propuesta</a></li>
+</ul>
+</nav>
+</header>
+
+<main id="contenido">
+<h2>Proponer un nuevo personaje</h2>
+<p>Completa el formulario para añadir un posible personaje al catálogo.</p>
+
+<form>
+<fieldset>
+<legend>Información básica</legend>
+
+<label for="nombre">Nombre del personaje (obligatorio):</label>
+<input type="text" id="nombre" name="nombre" required minlength="2">
+
+<label for="raza">Raza (obligatorio):</label>
+<select id="raza" name="raza" required>
+<option value="">Selecciona una raza</option>
+<option value="Saiyan">Saiyan</option>
+<option value="Human">Human</option>
+<option value="Namekian">Namekian</option>
+<option value="Android">Android</option>
+<option value="Frieza Race">Frieza Race</option>
+<option value="Otra">Otra</option>
+</select>
+
+<label for="genero">Género (obligatorio):</label>
+<select id="genero" name="genero" required>
+<option value="">Selecciona un género</option>
+<option value="Male">Male</option>
+<option value="Female">Female</option>
+</select>
+
+</fieldset>
+
+<fieldset>
+<legend>Datos de poder</legend>
+
+<label for="ki">Ki actual:</label>
+<input type="number" id="ki" name="ki" min="0">
+
+<label for="maxki">Ki máximo:</label>
+<input type="number" id="maxki" name="maxki" min="0">
+
+<label for="afiliacion">Afiliación:</label>
+<select id="afiliacion" name="afiliacion">
+<option value="">Selecciona una afiliación</option>
+<option value="Z Fighter">Z Fighter</option>
+<option value="Army of Frieza">Army of Frieza</option>
+<option value="Freelancer">Freelancer</option>
+<option value="Otra">Otra</option>
+</select>
+
+</fieldset>
+
+<fieldset>
+<legend>Información adicional</legend>
+
+<label for="imagen">URL de la imagen:</label>
+<input type="url" id="imagen" name="imagen" placeholder="https://ejemplo.com/imagen.webp">
+
+<label for="descripcion">Descripción del personaje (obligatorio):</label>
+<textarea id="descripcion" name="descripcion" rows="6" required minlength="20"></textarea>
+
+<label for="fecha">Fecha de creación del personaje:</label>
+<input type="date" id="fecha" name="fecha">
+
+</fieldset>
+
+<input type="submit" value="Enviar propuesta">
+</form>
+</main>
+
+<footer>
+<p>Dragon Ball Secrets - Datos obtenidos mediante Dragon Ball API.</p>
+</footer>
+</body>
+</html>
